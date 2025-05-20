@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRUD Authentication</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>CRUD Auth System</h1>
+    </header>
+
+    <section id="auth">
+      <h2>User Authentication</h2>
+
+      <div id="register">
+        <h3>Register</h3>
+        <input type="text" id="regName" placeholder="Enter Name" />
+        <input type="email" id="regEmail" placeholder="Enter Email" />
+        <input type="password" id="regPassword" placeholder="Enter Password" />
+        <button onclick="registerUser()">Register</button>
+      </div>
+
+      <div id="login">
+        <h3>Login</h3>
+        <input type="email" id="loginEmail" placeholder="Enter Email" />
+        <input
+          type="password"
+          id="loginPassword"
+          placeholder="Enter Password"
+        />
+        <button onclick="loginUser()">Login</button>
+      </div>
+
+      <p id="authMessage"></p>
+    </section>
+    <header>
+      <h1>Dashboard - Manage Profile</h1>
+      <button onclick="logout()">Logout</button>
+    </header>
+
+    <section id="crud">
+      <h2>Profile Management</h2>
+      <input type="text" id="profileName" placeholder="Enter Name" />
+      <input type="email" id="profileEmail" placeholder="Enter Email" />
+      <button onclick="updateProfile()">Update Profile</button>
+      <button onclick="deleteProfile()">Delete Profile</button>
+
+      <h3>Stored Profile:</h3>
+      <p id="profileData"></p>
+    </section>
+
+    <footer>
+      <p>© 2025 CRUD Auth System | Manage Securely</p>
+    </footer>
+
+    <footer>
+      <p>© 2025 CRUD Auth System | Secure & Simple</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
